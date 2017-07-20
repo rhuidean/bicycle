@@ -26,6 +26,7 @@ module.exports = {
 			if(err){
 				return res.json(err);
 			}
+			req.session.user_id=user._id;
 			return res.json(user);
 		})
 	},

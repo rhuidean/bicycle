@@ -10,13 +10,13 @@ let UserSchema = new mongoose.Schema({
         type: String,
         required: [true, "Email cannot be blank."],
         unique: [true,"Email is already registered"],
-        validate: {
-            validator: function(email){
-                let re=/^[a-zA-Z0-9.!#$%&’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
-                return (email==null||email.trim().length <1)||re.test(email)
-            },
-            message: 'Provided mail is invalid.'
-        }        
+        // validate: {
+        //     validator: function(email){
+        //         let re=/^[a-zA-Z0-9.!#$%&’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+        //         return (email==null||email.trim().length <1)||re.test(email)
+        //     },
+        //     message: 'Provided mail is invalid.'
+        // }        
     },
 
 	password: {

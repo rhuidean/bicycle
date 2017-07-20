@@ -9,6 +9,12 @@ app.use(session({
 	saveUninitialized: true
 }))
 
+app.use(bp.json());
+// postman field will be blank
+
+require('./server/config/mongoose');
+require('./server/config/routes')(app);
+
 app.listen(8000, function(){
 	console.log('listening on port 8000...');
 })
