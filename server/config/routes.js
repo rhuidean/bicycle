@@ -15,6 +15,10 @@ module.exports = function(app){
     app.post('/bikes',Bikes.create);
     app.patch('/bikes/:id',Bikes.update);
     app.get('/bikes/:id',Bikes.destroy);
+
+    app.all('*',function(req,res,next){
+        res.sendFile(path.resolve('/pulblic/dist/index.html'));
+    })
 }
 
 
