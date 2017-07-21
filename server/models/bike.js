@@ -32,4 +32,4 @@ UserSchema.methods.authenticate = function(password){
 	return bcrypt.compareSync(password, this.password);
 }
 
-mongoose.model('User', UserSchema);
+mongoose.model('Bike', BikeSchema);
