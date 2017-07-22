@@ -17,7 +17,7 @@ module.exports = function(app){
     app.get('/bikes/:id',Bikes.destroy);
 
     app.all('*',function(req,res,next){
-        res.sendFile(path.resolve('/pulblic/dist/index.html'));
+        res.sendFile(path.resolve('./public/dist/index.html'));
     })
 }
 
