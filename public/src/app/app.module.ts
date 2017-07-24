@@ -5,6 +5,7 @@ import { AppRoutingModule} from './app-routing.module';
 
 //Components
 import { AppComponent } from './app.component';
+import { NavComponent } from './nav/nav.component';
 
 
 //Services
@@ -12,7 +13,8 @@ import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
