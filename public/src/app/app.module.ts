@@ -6,8 +6,7 @@ import { AppRoutingModule} from './app-routing.module';
 //Components
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
-import { LoginComponent } from './src/app/login/login.component';
-
+import { LoginComponent} from './login/login.component';
 
 //Services
 
